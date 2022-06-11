@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BooksStore</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <link rel="stylesheet" href="~/css/Header.css" />
+        <div class="brand-box">
+            <span class="brand">  </span>
+        </div>
+
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Sách </span>
+                <span class="heading-primary-sub">Sản phẩm của trí tuệ</span>
+            </h1>
+            <a href="#" class="btn btn-white btn-animated">Xem thêm</a>
+        </div>
+    </header>
+    <div>
+        <div class="bg-dark text-white p-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col navbar-brand">BOOKS STORE</div>
+                    <div class="col-6 text-right">
+                        <vc:cart-summary />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-1 p-1">
+            <div id="genres" class="col-3">
+                <p>
+                    Trang chủ BooksStore giúp bạn khám phá 
+                    được nhiều loại sách mới 
+                </p>
+                <vc:genre-navigation />
+            </div>
+            <div class="col-9">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <!--footer-->
+    <footer class="kilimanjaro_area">
+        <!-- Top Footer Area Start -->
+        <div class="foo_top_header_one section_padding_100_70">
+            <link rel="stylesheet" href="~/css/Footer.css" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="kilimanjaro_part">
+                            <h5>Giới Thiệu</h5>
+                            <p>Mỗi người đọc sách theo suy nghĩ của bản thân sẽ nhìn nhận những nội dung trong sách theo các khía cạnh khác nhau. Tầm quan trọng của sách là việc có thể giúp cho người đọc phát huy sự sáng tạo, áp dụng những kiến thức trong sách vào ứng dụng thực tế của bản thân để xử lý trong các tình huống khác nhau.</p>
+                            <p></p>
+                        </div>
+                        <div class="kilimanjaro_part m-top-15">
+                            <h5>Các Nền Tảng</h5>
+                            <ul class="kilimanjaro_social_links">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+                                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="kilimanjaro_part">
+                            <h5>CHẤP NHẬN THANH TOÁN</h5>
+                            <ul class=" kilimanjaro_widget">
+                                <li><img src="https://www.vinabook.com/public/assets/img/visa.jpg" /></li>
+                                <li><img src="https://www.vinabook.com/public/assets/img/master_card.jpg" /></li>
+                                <li><img src="https://www.vinabook.com/public/assets/img/jcb.jpg" /></li>
+                                <li><img src="https://www.vinabook.com/public/assets/img/atm.jpg" /></li>
+                                <li><img src="https://www.vinabook.com/public/assets/img/cod.jpg" /></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="kilimanjaro_part m-top-15">
+                            <h5>Các Dịch Vụ</h5>
+                            <ul class="kilimanjaro_links">
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Điều Khoản & Dịch Vụ</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Giới Thiệu Về Giấy Phép</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Trợ Giúp & Hỗ Trợ</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Tuyển Dụng</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Chính Sách Bảo Mật</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Diễn Đàng & Cộng Đồng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="kilimanjaro_part">
+                            <h5>Tin Tức</h5>
+                            <div class="kilimanjaro_blog_area">
+                                <div class="kilimanjaro_thumb">
+                                    <img class="img-fluid" src="https://znews-photo.zingcdn.me/w1200/Uploaded/mzjyy/2022_04_26/IMG_3882_2_.JPG" alt="">
+
+                                </div>
+                                <a href="https://zingnews.vn/hieu-qua-khi-doc-sach-cung-con-post1312241.html">Hiệu quả khi đọc sách cùng con</a>
+                                <p class="kilimanjaro_date">21 Jan 2021</p>
+                                <p>“Đồng kiến tạo” khi đọc sách</p>
+                            </div>
+                            <div class="kilimanjaro_blog_area">
+                                <div class="kilimanjaro_thumb">
+                                    <img class="img-fluid" src="https://znews-photo.zingcdn.me/w1200/Uploaded/mzjyy/2022_04_24/sach_noi_tphcm_Chi_Hung.jpg" alt="">
+                                </div>
+                                <a href="https://zingnews.vn/van-hoa-doc-thoi-dai-40-post1311882.html">Văn hóa đọc thời đại 4.0</a>
+                                <p class="kilimanjaro_date">21 Jan 2020</p>
+                                <p>Văn hóa đọc tỷ lệ thuận với nền kinh tế quốc gia</p>
+                            </div>
+                            <div class="kilimanjaro_blog_area">
+                                <div class="kilimanjaro_thumb">
+                                    <img class="img-fluid" src="https://znews-photo.zingcdn.me/w1200/Uploaded/mzjyy/2022_04_21/Van_hoa_doc3_Zing.jpg" alt="">
+                                </div>
+                                <a href="https://zingnews.vn/huong-di-tiem-nang-cho-nganh-xuat-ban-post1311696.html">Hướng đi tiềm năng cho ngành xuất bản</a>
+                                <p class="kilimanjaro_date">21 Jan 2019</p>
+                                <p>Số đầu sách không tỷ lệ thuận với lượng độc giả</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="kilimanjaro_part">
+                            <h5>Liên Hệ</h5>
+                            <div class="kilimanjaro_single_contact_info">
+                                <h5>Số Điện Thoại:</h5>
+                                <p>+255 255 54 53 52 <br> +255 255 53 52 51</p>
+                            </div>
+                            <div class="kilimanjaro_single_contact_info">
+                                <h5>Email:</h5>
+                                <p>support@email.com <br> company@email.com</p>
+                            </div>
+                        </div>
+                        <div class="kilimanjaro_part">
+                            <h5>Latest Works</h5>
+                            <div class="kilimanjaro_works">
+                                <a class="kilimanjaro_works_img" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+                                <a class="kilimanjaro_works_img" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" alt=""></a>
+                                <a class="kilimanjaro_works_img" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" alt=""></a>
+                                <a class="kilimanjaro_works_img" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" alt=""></a>
+                                <a class="kilimanjaro_works_img" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" alt=""></a>
+                                <a class="kilimanjaro_works_img" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom Area Start -->
+        <div class=" kilimanjaro_bottom_header_one section_padding_50 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>© All Rights Reserved by <a href="#">My Footer<i class="fa fa-love"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

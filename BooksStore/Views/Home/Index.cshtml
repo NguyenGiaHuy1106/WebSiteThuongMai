@@ -1,0 +1,48 @@
+﻿@model BooksStore.Models.ViewModels.BooksListViewModel
+<p>
+    <a asp-action="Created" class="btn btn-sm  btn-success   text-uppercase"><i class="fas fa-plus-square"></i> Tạo mới sản phẩm</a>
+</p>
+
+<div class="row">
+    @foreach (var books in Model.Books)
+    {
+
+        <div class="col-md-4 col-xs-6 border-primary mb-3">
+            <div class="card mb-3"  style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div style="color:black" class="card-header text-dark bg-warning">
+                            <p class="card-text">
+                                <h5 class="card-title">
+                                    @books.Title
+                                </h5>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <img src="~/images/@books.ProfilePicture" asp-append-version="true" width="100%" height="300" />
+                    </div>
+                    <div class="col-md-12">
+                        <div style="color: black" class="card-body alert-success">
+                            <p class="card-text"><b>Tên sách: </b>@books.Title</p>
+                            <p class="card-text"><b>Mô tả: </b>@books.Description</p>
+                            <p class="card-text"><b>Thể loại: </b>@books.Genre</p>
+                            <p class="card-text"><b>Giá: </b>@books.Price</p>
+                           
+                            <p>
+                                <partial name="BookTemplate" model="books" />
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
+     page-class="btn" page-class-normal="btn-outline-dark"
+     page-class-selected="btn-primary" page-url-genre="@Model.CurrentGenre"
+     class="btn-group pull-right m-1">
+
+</div>
